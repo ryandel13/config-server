@@ -10,4 +10,21 @@ eureka:
    
 ---
 
-profile: docker
+spring:
+  profiles: docker
+
+eureka:
+ instance:
+    hostname: localhost
+    non-secure-port: 9762
+#    virtual-host-name: localhost
+#    metadataMap:
+#      management:
+#        port: 9763
+    healthCheckUrl: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port}/actuator/health
+    statusPageUrl: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port}/actuator/info
+ client:
+  serviceUrl:
+    defaultZone: http://host.docker.internal:9761/eureka/
+  healthcheck:
+   enabled: true
