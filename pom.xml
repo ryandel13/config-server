@@ -19,9 +19,9 @@
 	</parent>
 
 	<scm>
-	    <connection>scm:git:https://github.com/ryandel13/config-service</connection>
-	    <developerConnection>scm:git:https://github.com/ryandel13/config-service</developerConnection>
-	    <url>https://github.com/ryandel13/config-service</url>
+	    <connection>scm:git:https://github.com/ryandel13/config-server</connection>
+	    <developerConnection>scm:git:https://github.com/ryandel13/config-server</developerConnection>
+	    <url>https://github.com/ryandel13/config-server</url>
   </scm>
 	
 	<properties>
